@@ -6,18 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dierenrechten</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/main.js"></script>
+
 </head>
 
 <body>
     <div id="title">
         <h1 id="mainTitle">Dieren rechten</h1>
     </div>
-    <button type="button">Click me</button>
+    <div class="scrolling-bar">
+        Dit is de balk die meescrolt.
+    </div>
+    <div class="content" id="content">
+        <!-- Hier komt de inhoud die kan veranderen -->
+        <p>Dit is het standaardinformatiegedeelte.</p>
+        <button onclick="LoadPage()">Laad nieuwe inhoud</button>
+    </div>
+
+    <button onclick="LoadPage('index.html')">Thuis</button>
+    <button onclick=" LoadPage('geschiedenis.html')">Geschiedenis</button>
     <div id="geschiedenis"></div>
     <div id="verminderen"></div>
     <div id="watIsHet"></div>
 
 </body>
+<script src="js/main.js"></script>
 
 </html>
